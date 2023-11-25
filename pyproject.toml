@@ -14,9 +14,9 @@ yt-dlp = "^2023.11.16"
 fastapi = "^0.104.1"
 feedgen = "^0.9.0"
 fastapi-cache2 = "^0.2.1"
+uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
 
 [tool.poetry.group.dev.dependencies]
-uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
 autopep8 = "^2.0.4"
 
 [build-system]
