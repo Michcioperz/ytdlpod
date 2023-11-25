@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "ytdlpod"
+version = "0.1.0"
+description = ""
+authors = ["Michcio <public+git@meekchopp.es>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+ytdlpod = "ytdlpod:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+yt-dlp = "^2023.11.16"
+fastapi = "^0.104.1"
+feedgen = "^0.9.0"
+fastapi-cache2 = "^0.2.1"
+
+[tool.poetry.group.dev.dependencies]
+uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
+autopep8 = "^2.0.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
